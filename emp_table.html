@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f3efef;
+    }
+
+    .form-card {
+      background: rgb(243, 179, 60);
+      border-radius: 55px;
+      padding: 30px;
+      border: 4px solid #5dff78;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .form-label {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .submit-btn:hover {
+      border-radius: 10px;
+      padding: 6px 20px;
+      transform:scale(1.2);
+      background-color: #5dff78;
+    }
+    .emp{
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 7px;
+        padding-left: 650px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+  </style>
+</head>
+
+<body>
+<h2 class="emp">Employee Table </h2>
+
+
+<div class="container mt-2">
+  <div class="row justify-content-center">
+    <div class="col-md-7">
+
+      <div class="form-card">
+
+        <form>
+          <div class="row g-3">
+
+            <!-- Phone -->
+            <div class="col-md-6">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+
+            <!-- Employee ID -->
+            <div class="col-md-6">
+              <label class="form-label">Phone no</label>
+              <input type="number" class="form-control" placeholder="Enter employee number">
+            </div>
+
+            <!-- Aadhar -->
+            <div class="col-md-6">
+              <label class="form-label">Aadhar</label>
+              <input type="number" class="form-control" placeholder="Enter aadhar">
+            </div>
+
+            <!-- PAN -->
+            <div class="col-md-6">
+              <label class="form-label">Pan Card</label>
+              <input type="text" class="form-control" placeholder="Enter pancard">
+            </div>
+
+            <!-- Blood Group -->
+            <div class="col-md-6">
+              <label class="form-label">Blood Group</label>
+              <input type="text" class="form-control" placeholder="Enter blood group">
+            </div>
+
+            <!-- DOB -->
+            <div class="col-md-6">
+              <label class="form-label">DOB</label>
+              <input type="date" class="form-control">
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter email">
+            </div>
+
+            <!-- Password -->
+            <div class="col-md-6">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Enter password">
+            </div>
+
+            <!-- File Upload -->
+            <div class="col-md-6">
+              <label class="form-label">Upload ID</label>
+              <input type="file" class="form-control">
+            </div>
+
+        
+              <!-- Time -->
+            <div class="col-md-6">
+              <label class="form-label">Preferred Time</label>
+              <input type="time" class="form-control">
+            </div>
+
+            <!-- Color -->
+            <div class="col-md-6">
+              <label class="form-label">Favorite Color</label>
+              <input type="color" class="form-control form-control-color">
+            </div>
+
+             <!-- Range -->
+            <div class="col-md-6">
+              <label class="form-label">Experience (Years)</label>
+              <input type="range" class="form-range">
+            </div>
+
+            <!-- Gender -->
+            <div class="col-12">
+              <label class="form-label d-block">Gender</label>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender">
+                <label class="form-check-label">Male</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender">
+                <label class="form-check-label">Female</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender">
+                <label class="form-check-label">Other</label>
+              </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">
+                  I agree to terms & conditions
+                </label>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="col-12">
+              <button class="btn btn-success submit-btn">Submit</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Footer Start -->
+<footer class="bg-dark text-white mt-3 py-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-md-3 mb-3 mt-2">
+        <h6 class="fw-bold mb-3 text-warning">⚪ About Us</h6>
+        <p class="small text-white" style="line-height: 1.5;">
+          Real Madrid FC is a professional football club based in Madrid, Spain.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-3 mb-2 mt-2">
+        <h6 class="fw-bold mb-3 text-warning">🔗Quick Links</h6>
+        <ul class="list-unstyled small ">
+          <li class="mb-1"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li class="mb-1"><a href="shop.html" class="text-white text-decoration-none">Shop</a></li>
+          <li class="mb-1"><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li class="mb-1"><a href="activities.html" class="text-white text-decoration-none">Activities</a></li>
+          <li class="mb-1"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Ticket</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-3 mb-2 mt-2">
+        <h6 class="fw-bold mb-3 text-warning">📱Follow Us</h6>
+        <div class="d-flex flex-column gap-3">
+          <a href="https://www.facebook.com/realmadrid" target="_blank">
+            <img src="images/fb.png" alt="Facebook" width="28" height="28">
+          </a>
+          <a href="https://twitter.com/realmadrid" target="_blank">
+            <img src="images/twitter.png" alt="Twitter" width="28" height="28">
+          </a>
+          <a href="https://www.instagram.com/realmadrid" target="_blank">
+            <img src="images/insta.png" alt="Instagram" width="28" height="28">
+          </a>
+          <a href="https://www.youtube.com/@realmadrid" target="_blank">
+            <img src="images/Youtube.png" alt="Youtube" width="28" height="28">
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-md-3 mb-2 mt-2">
+        <h6 class="fw-bold mb-3 text-warning">📞 Contact Info</h6>
+        <p class="small text-white" style="line-height: 1.7;">
+          📍 Madrid, Spain<br>
+          📞 +34 91 398 4300<br>
+          📧 realmadrid@realmadrid.com
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <hr class="border-3 my-2">
+
+    <div class="text-center medium text-light" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+      <p class="mb-0">&copy; 2026 Real Madrid FC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+</body>
+</html>
