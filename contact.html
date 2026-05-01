@@ -89,143 +89,146 @@
     </nav>
     </header>
     <!-- Navbar End -->
-<section class="mt-5">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <h3 class="d-flex justify-content-center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">Follow Our Social Media Accounts</h3>
-             <div class="container">
-            <div class="row d-flex justify-content-center ">
-                <div class="col-md-1 mb-2 ">
-                    <i class="bi bi-facebook social"></i>
-                    <i class="bi bi-instagram social"></i>
 
 
-                   
-            
-        </div>
+<section class="mt-2">
+  <div class="container">
+<h3 class=" d-flex justify-content-center fw-bold mt-3" style="font-family: 'Segoe UI', sans-serif; letter-spacing: 1px; color: #2c2c2c; display: inline-block;">
+  Follow Our Social Media Accounts
+</h3>
+
+    <div class="row justify-content-center mt-3">
+      <div class="col-auto">
+        <a href="https://www.facebook.com/RealMadrid" target="_blank">
+          <i class="bi bi-facebook fs-1" style="color: #1877F2;"></i>
+        </a>
+      </div>
+      <div class="col-auto">
+        <a href="https://www.instagram.com/realmadrid" target="_blank">
+          <i class="bi bi-instagram fs-1" style="color: #f555f0;"></i>
+        </a>
+      </div>
+      <div class="col-auto">
+        <a href="https://www.x.com/realmadrid" target="_blank">
+          <i class="bi bi-twitter-x fs-1" style="color: #000000;"></i>
+        </a>
+      </div>
+      <div class="col-auto">
+        <a href="https://www.youtube.com/@realmadrid" target="_blank">
+          <i class="bi bi-youtube fs-1" style="color: #FF0000;"></i>
+        </a>
+      </div>
+      <div class="col-auto">
+        <a href="https://www.twitch.tv/realmadrid" target="_blank">
+          <i class="bi bi-twitch fs-1" style="color: #9146FF;"></i>
+        </a>
+      </div>
     </div>
-
+  </div>
 </section>
     
 
-    <section>
-        <div class="container">
-            <div class="container-grid">
-                <!-- Form on Left -->
-                <div class="border p-4 rounded border-primary">
-                    <h3 class="mb-4" style="font-weight: bold;">Contact Form</h3>
+   <section class="mt-4">
+    <div class="container">
+        <div class="row gap-3">
 
-                    <form id="contactForm">
-                        <!-- Name and Email -->
-                        <div class="row mb-3">
-                            <div class=" col-md-6">
-                                <label for="class" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="class" name="name" placeholder="Enter Name"
-                                    required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="name@example.com" required>
-                            </div>
+            <!-- Form on Left -->
+            <div class="col p-4 rounded-4 shadow-sm" style="background: #f0f4ff; min-height: 600px; border: 2px solid #1877F2; border-top: 4px solid #1877F2;">
+                <h3 class="mb-4 fw-bold">Contact Form</h3>
+                <form id="contactForm">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" placeholder="Enter Name" required>
                         </div>
-
-                        <!-- Phone and Subject -->
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="number" class="form-control" id="phone" name="phone"
-                                    placeholder="Enter phone number" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" name="subject"
-                                    placeholder="Enter Subject" required>
-                            </div>
+                        <div class="col">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
                         </div>
-
-                        <!-- Country, State, City -->
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <label for="country" class="form-label">Country</label>
-                                <select class="form-select" id="country" name="country" required>
-                                    <option value="">Choose...</option>
-                                    <option value="spain">Spain</option>
-                                    <option value="uk">U.K.</option>
-                                    <option value="france">France</option>
-                                    <option value="german">Germany</option>
-                                    <option value="italy">Italy</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="state" class="form-label">State</label>
-                                <select class="form-select" id="state" name="state" required>
-                                    <option value="">Choose...</option>
-                                    <option value="maharashtra">Maharashtra</option>
-                                    <option value="karnataka">Karnataka</option>
-                                    <option value="delhi">Delhi</option>
-                                    <option value="tamilnadu">Tamil Nadu</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="city" class="form-label">City</label>
-                                <select class="form-select" id="city" name="city" required>
-                                    <option value="">Choose...</option>
-                                    <option value="mumbai">Madrid</option>
-                                    <option value="pune">Barcelona</option>
-                                    <option value="bangalore">Paris</option>
-                                    <option value="delhi">Berlin</option>
-                                    <option value="delhi">Munich</option>
-                                </select>
-                            </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label">Phone</label>
+                            <input type="number" class="form-control" name="phone" placeholder="Enter phone number" required>
                         </div>
-
-                        <!-- Gender -->
-                        <div class="mb-3">
-                            <label class="form-label">Gender</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" id="male" name="gender" value="male"
-                                    required>
-                                <label class="form-check-label" for="male">Male</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" id="female" name="gender" value="female">
-                                <label class="form-check-label" for="female">Female</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" id="other" name="gender" value="other">
-                                <label class="form-check-label" for="other">Other</label>
-                            </div>
+                        <div class="col">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" name="subject" placeholder="Enter Subject" required>
                         </div>
-                        <!-- Terms and Conditions -->
-                        <div class="mb-3 form-check">
-                            <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
-                            <label class="form-check-label" for="terms">
-                                I agree to the terms and conditions.
-                            </label>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label">Country</label>
+                            <select class="form-select" name="country" required>
+                                <option value="">Choose...</option>
+                                <option>Spain</option>
+                                <option>U.K.</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                                <option>Italy</option>
+                            </select>
                         </div>
-                        <!-- Submit Button -->
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-                <!-- Map on Right -->
-                <div class="border p-4 rounded border-primary">
-                    <h4 class="mb-4" style="font-weight: bold;">📍Real Madrid Location</h4>
-                    <p style="font-size: 13px; color: #585858;">
-                        <strong>Madrid, Spain</strong><br>
-                        Santiago Bernabéu Stadium<br>
-                         Madrid, Spain<br>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.47826870144!2d-3.8443464593747247!3d40.43809861079317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sin!4v1777270049869!5m2!1sen!2sin"
-                            width="100%" height="425" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </p>
-                    <div id="map" style="height: 350px; border-radius: 5px;"></div>
-                </div>
+                        <div class="col">
+                            <label class="form-label">State</label>
+                            <select class="form-select" name="state" required>
+                                <option value="">Choose...</option>
+                                <option>Maharashtra</option>
+                                <option>Karnataka</option>
+                                <option>Delhi</option>
+                                <option>Tamil Nadu</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="form-label">City</label>
+                            <select class="form-select" name="city" required>
+                                <option value="">Choose...</option>
+                                <option>Madrid</option>
+                                <option>Barcelona</option>
+                                <option>Paris</option>
+                                <option>Berlin</option>
+                                <option>Munich</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" value="male" required>
+                            <label class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" value="female">
+                            <label class="form-check-label">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" value="other">
+                            <label class="form-check-label">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="terms" required>
+                        <label class="form-check-label">I agree to the terms and conditions.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
+
+            <!-- Map on Right -->
+            <div class="col p-4 rounded-4 shadow-sm" style="background: #fff8f0; min-height: 600px; border: 2px solid #FF0000; border-top: 4px solid #FF0000;">
+                <h4 class="mb-3 fw-bold">📍 Real Madrid Location</h4>
+                <p style="font-size: 13px; color: #585858;">
+                    <strong>Madrid, Spain</strong><br>
+                    Santiago Bernabéu Stadium
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.47826870144!2d-3.8443464593747247!3d40.43809861079317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sin!4v1777270049869!5m2!1sen!2sin"
+                    width="100%" height="500" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Info Boxes Section -->
 <section>
