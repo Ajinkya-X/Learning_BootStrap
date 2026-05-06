@@ -8,22 +8,35 @@
   <style>
     .ssd {
       font-size: 20px;
-      
     }
 
     .sssd {
       font-weight: bold;
       font-size: 20px;
-     
     }
 
     .ssssd {
-      /* color: rgb(141, 244, 112); */
       color: rgb(58, 127, 231);
-
     }
-    
 
+    /* Small enhancements */
+    body { background-color: #f4f6f9; }
+
+    .spine { position: fixed; bottom: 20px; right: 20px; }
+
+    .content-section {
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    section img.img-fluid {
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      transition: transform 0.3s;
+    }
+    section img.img-fluid:hover { transform: scale(1.02); }
+
+    footer a:hover { color: #ffc107 !important; }
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -50,7 +63,6 @@
           <li class="nav-item">
             <a class="nav-link active text-dark bg-warning rounded-pill" href="about.html">Madridistas</a>
           </li>
-
 
               <li class="nav-item">
           <a class="nav-link" href="shop.html">Shop</a>
@@ -87,59 +99,54 @@
   </nav>
   </header>
 
-
-
 <br><br>
-<div class="spinner-border text-danger spine " role="status" style="margin-left: 120px;">
+<div class="spinner-grow text-danger spine" role="status" style="margin-left: 120px;">
   <span class="visually-hidden">Loading...</span>
 </div>
 
-
-
 <!-- Content Sections -->
-<section id="home" class="py-2 bg-light">
+<section id="home" class="py-2  bg-light">
   <div class="container">
-    <h2>Welcome to Real Madrid</h2>
-    <p>One of the most successful football clubs in the world. Founded in 1902, Real Madrid has won numerous trophies and championships.</p>
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Welcome to Real Madrid</h2>
+    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">One of the most successful football clubs in the world. Founded in 1902, Real Madrid has won numerous trophies and championships.</p>
   </div>
 </section>
 
 <section id="players" class="py-2">
   <div class="container">
-    <h2>Our Players</h2>
-    <p>Real Madrid boasts world-class players including Vinícius Júnior, Jude Bellingham, Luka Modrić, and many more talented athletes.</p>
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Our Players</h2>
+    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Real Madrid boasts world-class players including Vinícius Júnior, Jude Bellingham, Luka Modrić, and many more talented athletes.</p>
   </div>
 </section>
 
 <section id="stadium" class="py-2 bg-light">
   <div class="container">
-    <h2>Santiago Bernabéu</h2>
-    <p>Our iconic home stadium with a capacity of 81,044 spectators. Currently undergoing major renovations to become even more modern.</p>
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Santiago Bernabéu</h2>
+    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Our iconic home stadium with a capacity of 81,044 spectators. Currently undergoing major renovations to become even more modern.</p>
   </div>
 </section>
 
 <section id="trophies" class="py-2">
   <div class="container">
-    <h2>Trophies & Achievements</h2>
-    <p >15 UEFA Champions League titles, 35 La Liga titles, 20 Copa del Rey titles, and many more domestic and international trophies.</p>
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Trophies & Achievements</h2>
+    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">15 UEFA Champions League titles, 35 La Liga titles, 20 Copa del Rey titles, and many more domestic and international trophies.</p>
   </div>
 </section>
 
 <section id="about" class="py-2 bg-light">
   <div class="container">
-    <h2>About Real Madrid</h2>
-    <p>Real Madrid CF is a professional football club that continues to set standards of excellence in both domestic and international competitions.</p>
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">About Real Madrid</h2>
+    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Real Madrid CF is a professional football club that continues to set standards of excellence in both domestic and international competitions.</p>
   </div>
 </section>
 
-
   <!-- About Content -->
-  <div class="container mt-4 bg-light">
+  <div class="container mt-4 p-4 bg-white content-section">
     <h2 style="font-weight: bold;" class="ssssd">Royal History of Real Madrid</h2>
     <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="ssd">
       Real Madrid is one of the most famous football clubs in the world.
-      Real Madrid CF, founded in 1902 as Madrid Football Club, earned its “royal” status in 1920 when King Alfonso XIII
-      granted it the title “Real,” adding a crown to its crest and elevating its prestige; over the decades, the club
+      Real Madrid CF, founded in 1902 as Madrid Football Club, earned its "royal" status in 1920 when King Alfonso XIII
+      granted it the title "Real," adding a crown to its crest and elevating its prestige; over the decades, the club
       grew into a global powerhouse, especially during the 1950s and 1960s when legends like Alfredo Di Stéfano and
       Ferenc Puskás led them to five consecutive European Cup titles, while president Santiago Bernabéu transformed the
       club with the iconic Santiago Bernabéu Stadium; in the modern era, under Florentino Pérez.
@@ -149,8 +156,9 @@
       Fans of Real Madrid are called Madristas. The club is known for its strong history and great players.
     </p>
   </div>
-  <section>
-    <div class="container bg-light p-4 text-dark">
+
+  <section class="mt-4">
+    <div class="container bg-white p-4 text-dark content-section">
       <div class="row">
         <div class="col-md-4 mb-2">
           <img class="img-fluid" src="/images/Std1 (1).jpg" alt="">
@@ -158,7 +166,7 @@
         <div class="col-md-8 mb-2">
           <h2 style="font-weight: bold;" class="ssssd">Galácticos✨:</h2>
           <p class="ssd" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Real Madrid ❤️ has been
-            hometo many legendary players such as Cristiano Ronaldo, Zinedine Zidane, and Raúl. The club is famous for
+            home to many legendary players such as Cristiano Ronaldo, Zinedine Zidane, and Raúl. The club is famous for
             its attacking style of play and its ability to perform well in big matches. Real Madrid has a huge fan base all
             around the world, and its matches are watched by millions of people. The club also focuses on developing
             young talent and building a strong team.</p>
@@ -171,8 +179,8 @@
     </div>
   </section>
 
-  <section>
-    <div class="container bg-light p-4 text-dark">
+  <section class="mt-4">
+    <div class="container bg-white p-4 text-dark content-section">
       <div class="row">
         <div class="col-md-8 mb-2">
           <h2 style="font-weight: bold;" class="ssssd">Legacy and Titles🏆:</h2>
@@ -194,20 +202,20 @@
 
   <section class="mt-4">
         <div class="container">
-            <div class="row">    
+            <div class="row">
                 <div class="col-md-4 mb-2">
-                    <img class="img-fluid" src="/images/Std1 (2).jpg" alt="">
-                    <p></p>
+                    <img class="img-fluid rounded-3" src="/images/Std1 (2).jpg" alt="" style="box-shadow:0 3px 10px rgba(0,0,0,0.12);transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
                 <div class="col-md-4 mb-2">
-                    <img class="img-fluid" src="/images/Std1 (2).jpg" alt="">
+                    <img class="img-fluid rounded-3" src="/images/Std1 (2).jpg" alt="" style="box-shadow:0 3px 10px rgba(0,0,0,0.12);transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
                 <div class="col-md-4 mb-2">
-                    <img class="img-fluid" src="/images/Std1 (2).jpg" alt="">
+                    <img class="img-fluid rounded-3" src="/images/Std1 (2).jpg" alt="" style="box-shadow:0 3px 10px rgba(0,0,0,0.12);transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Footer Start -->
 <footer class="bg-dark text-white mt-3 py-3">
   <div class="container">
